@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin</title>
+</head>
+<body>
+    <header>
+        <div class="upperline_login">
+            <div class="otdels">
+                <h1>admin panel</h1>
+                <a href="../add.html">Добавить новый тур</a> 
+            </div>
+            <div class="tours_login">
+                <p><a href="../main.html">Выйти</a></p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Каталог туров</h2>
+        <div class="container">
+            <div class="items">
+                <div class="item">
+                    <!-- Карточка товара -->
+                    <div class="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                        <!-- Изображение-ссылка товара -->
+                        <a href="#" class="card__image">
+                            <img src="../imgs/africa.jpeg"
+                            alt="Africa"/>
+                        </a>
+                        <!-- Скидка на товар -->
+                        <div class="card__label">-10%</div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                        <!-- Цены на товар (с учетом скидки и без)-->
+                        <div class="card__prices">
+                            <div class="card__price card__price--discount">135 000</div>
+                            <div class="card__price card__price--common">150 000</div>
+                        </div>
+                        <!-- Ссылка-название товара -->
+                        <a href="#" class="card__title">
+                            Африка
+                        </a>
+                        <!-- Кнопка добавить в корзину -->
+                        <button class="card__add"> <a href="#openModal">Редактировать</a></button>
+                        <button class="card__delete">Удалить</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="openModal" class="modal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Редактирование</h3>
+                            <a href="#close" title="Close" class="close">×</a>
+                        </div>
+                            <div class="modal-body">    
+                                <!-- Карточка товара -->
+                                <div class="card">
+                                    <!-- Верхняя часть -->
+                                    <div class="card__top">
+                                    <!-- Изображение-ссылка товара -->
+                                    <a href="#" class="card__image">
+                                        <label for="avatar">Выберите фотокарточку</label>
+                                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+                                    </a>
+                                    <!-- Скидка на товар -->
+                                    <div class="card__label">
+                                        <label for="name">Скидка</label>
+                                        <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" /></div>
+                                    </div>
+                                    <!-- Нижняя часть -->
+                                    <div class="card__bottom">
+                                    <!-- Цены на товар (с учетом скидки и без)-->
+                                        <div class="card__prices">
+                                            <div class="card__price card__price--discount">135 000</div>
+                                            <div class="card__price card__price--common">150 000</div>
+                                        </div>
+                                        <!-- Ссылка-название товара -->
+                                        <div class="card__title"><p>Страна</p>
+                                            <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />     
+                                        </div>
+                                        <!-- Кнопка добавить в корзину -->
+                                        <button onclick="window.close()" class="card__add "> <a href="#openModal"><a href="../admin page/admin.html">Сохранить</a></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="item">
+                    <!-- Карточка товара -->
+                    <div class="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                        <!-- Изображение-ссылка товара -->
+                        <a href="#" class="card__image">
+                            <img src="../imgs/africa.jpeg"
+                            alt="Africa"/>
+                        </a>
+                        <!-- Скидка на товар -->
+                        <div class="card__label">-10%</div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                        <!-- Цены на товар (с учетом скидки и без)-->
+                        <div class="card__prices">
+                            <div class="card__price card__price--discount">135 000</div>
+                            <div class="card__price card__price--common">150 000</div>
+                        </div>
+                        <!-- Ссылка-название товара -->
+                        <a href="#" class="card__title">
+                            Африка
+                        </a>
+                        <!-- Кнопка добавить в корзину -->
+                        <button class="card__add"> <a href="#openModal">Редактировать</a></button>
+                        <button class="card__delete">Удалить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- Карточка товара -->
+                    <div class="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                        <!-- Изображение-ссылка товара -->
+                        <a href="#" class="card__image">
+                            <img src="../imgs/africa.jpeg"
+                            alt="Africa"/>
+                        </a>
+                        <!-- Скидка на товар -->
+                        <div class="card__label">-10%</div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                        <!-- Цены на товар (с учетом скидки и без)-->
+                        <div class="card__prices">
+                            <div class="card__price card__price--discount">135 000</div>
+                            <div class="card__price card__price--common">150 000</div>
+                        </div>
+                        <!-- Ссылка-название товара -->
+                        <a href="#" class="card__title">
+                            Африка
+                        </a>
+                        <!-- Кнопка добавить в корзину -->
+                        <button class="card__add"> <a href="#openModal">Редактировать</a></button>
+                        <button class="card__delete">Удалить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- Карточка товара -->
+                    <div class="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                        <!-- Изображение-ссылка товара -->
+                        <a href="#" class="card__image">
+                            <img src="../imgs/africa.jpeg"
+                            alt="Africa"/>
+                        </a>
+                        <!-- Скидка на товар -->
+                        <div class="card__label">-10%</div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                        <!-- Цены на товар (с учетом скидки и без)-->
+                        <div class="card__prices">
+                            <div class="card__price card__price--discount">135 000</div>
+                            <div class="card__price card__price--common">150 000</div>
+                        </div>
+                        <!-- Ссылка-название товара -->
+                        <a href="#" class="card__title">
+                            Африка
+                        </a>
+                        <!-- Кнопка добавить в корзину -->
+                        <button class="card__add"> <a href="#openModal">Редактировать</a></button>
+                        <button class="card__delete">Удалить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- Карточка товара -->
+                    <div class="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                        <!-- Изображение-ссылка товара -->
+                        <a href="#" class="card__image">
+                            <img src="../imgs/africa.jpeg"
+                            alt="Africa"/>
+                        </a>
+                        <!-- Скидка на товар -->
+                        <div class="card__label">-10%</div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                        <!-- Цены на товар (с учетом скидки и без)-->
+                        <div class="card__prices">
+                            <div class="card__price card__price--discount">135 000</div>
+                            <div class="card__price card__price--common">150 000</div>
+                        </div>
+                        <!-- Ссылка-название товара -->
+                        <a href="#" class="card__title">
+                            Африка
+                        </a>
+                        <!-- Кнопка добавить в корзину -->
+                        <button class="card__add"> <a href="#openModal">Редактировать</a></button>
+                        <button class="card__delete">Удалить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- Карточка товара -->
+                    <div class="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                        <!-- Изображение-ссылка товара -->
+                        <a href="#" class="card__image">
+                            <img src="../imgs/africa.jpeg"
+                            alt="Africa"/>
+                        </a>
+                        <!-- Скидка на товар -->
+                        <div class="card__label">-10%</div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                        <!-- Цены на товар (с учетом скидки и без)-->
+                        <div class="card__prices">
+                            <div class="card__price card__price--discount">135 000</div>
+                            <div class="card__price card__price--common">150 000</div>
+                        </div>
+                        <!-- Ссылка-название товара -->
+                        <a href="#" class="card__title">
+                            Африка
+                        </a>
+                        <!-- Кнопка добавить в корзину -->
+                        <button class="card__add"> <a href="#openModal">Редактировать</a></button>
+                        <button class="card__delete">Удалить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- Карточка товара -->
+                    <div class="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                        <!-- Изображение-ссылка товара -->
+                        <a href="#" class="card__image">
+                            <img src="../imgs/africa.jpeg"
+                            alt="Africa"/>
+                        </a>
+                        <!-- Скидка на товар -->
+                        <div class="card__label">-10%</div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                        <!-- Цены на товар (с учетом скидки и без)-->
+                        <div class="card__prices">
+                            <div class="card__price card__price--discount">135 000</div>
+                            <div class="card__price card__price--common">150 000</div>
+                        </div>
+                        <!-- Ссылка-название товара -->
+                        <a href="#" class="card__title">
+                            Африка
+                        </a>
+                        <!-- Кнопка добавить в корзину -->
+                        <button class="card__add"> <a href="#openModal">Редактировать</a></button>
+                        <button class="card__delete">Удалить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- Карточка товара -->
+                    <div class="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                        <!-- Изображение-ссылка товара -->
+                        <a href="#" class="card__image">
+                            <img src="../imgs/africa.jpeg"
+                            alt="Africa"/>
+                        </a>
+                        <!-- Скидка на товар -->
+                        <div class="card__label">-10%</div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                        <!-- Цены на товар (с учетом скидки и без)-->
+                        <div class="card__prices">
+                            <div class="card__price card__price--discount">135 000</div>
+                            <div class="card__price card__price--common">150 000</div>
+                        </div>
+                        <!-- Ссылка-название товара -->
+                        <a href="#" class="card__title">
+                            Африка
+                        </a>
+                        <!-- Кнопка добавить в корзину -->
+                        <button class="card__add"> <a href="#openModal">Редактировать</a></button>
+                        <button class="card__delete">Удалить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- Карточка товара -->
+                    <div class="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                        <!-- Изображение-ссылка товара -->
+                        <a href="#" class="card__image">
+                            <img src="../imgs/africa.jpeg"
+                            alt="Africa"/>
+                        </a>
+                        <!-- Скидка на товар -->
+                        <div class="card__label">-10%</div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                        <!-- Цены на товар (с учетом скидки и без)-->
+                        <div class="card__prices">
+                            <div class="card__price card__price--discount">135 000</div>
+                            <div class="card__price card__price--common">150 000</div>
+                        </div>
+                        <!-- Ссылка-название товара -->
+                        <a href="#" class="card__title">
+                            Африка
+                        </a>
+                        <!-- Кнопка добавить в корзину -->
+                        <button class="card__add"> <a href="#openModal">Редактировать</a></button>
+                        <button class="card__delete">Удалить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- Карточка товара -->
+                    <div class="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                        <!-- Изображение-ссылка товара -->
+                        <a href="#" class="card__image">
+                            <img src="../imgs/africa.jpeg"
+                            alt="Africa"/>
+                        </a>
+                        <!-- Скидка на товар -->
+                        <div class="card__label">-10%</div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                        <!-- Цены на товар (с учетом скидки и без)-->
+                        <div class="card__prices">
+                            <div class="card__price card__price--discount">135 000</div>
+                            <div class="card__price card__price--common">150 000</div>
+                        </div>
+                        <!-- Ссылка-название товара -->
+                        <a href="#" class="card__title">
+                            Африка
+                        </a>
+                        <!-- Кнопка добавить в корзину -->
+                        <button class="card__add"> <a href="#openModal">Редактировать</a></button>
+                        <button class="card__delete">Удалить</button>
+                        </div>
+                    </div>
+                </div>
+    </main>
+</body>
+</html>

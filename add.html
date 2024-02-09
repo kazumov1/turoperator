@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add.css">
+    <title>Add new</title>
+</head>
+<body>
+    <header>
+        <div class="upperline_login">
+            <div class="otdels">
+                <h1>admin panel add items </h1>
+            </div>
+            <div class="tours_login">
+                <p><a href="admin page/admin.html">Назад</a></p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="add_new__tour">
+                <div class="new_tour">
+                    <div class="image">
+                        <p>Добавить фото</p>
+                        <input type="file" name="NewImage" id="newImage">
+                    </div>
+                    <div class="sale">
+                        <div class="sale_check">
+                            <p>Добавить скидку</p>
+                            <input type="checkbox" name="addSale" id="addSale">
+                        </div>
+                        <input id="addSale_input" type="number" value="0" placeholder="%"/>
+                    </div>
+                    <div class="price">
+                        <p>Цена тура:</p>
+                        <input type="number" name="addPrice" id="addPrice">
+                    </div>
+                    <div class="country">
+                        <p>Страна:</p>
+                        <input type="text" name="addCountry" id="addCountry">
+                    </div>
+                    <a class="save" href="#openModal">Сохранить</a>
+                    <div id="openModal" class="modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Успех!</h3>
+                                <a href="#close" title="Close" class="close">×</a>
+                            </div>
+                            <div class="modal-body">    
+                                <p>Данные сохранены успешно</p>
+                                <p><a href="admin page/admin.html">Выйти на панель админа</a></p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
